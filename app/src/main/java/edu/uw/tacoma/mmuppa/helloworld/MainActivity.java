@@ -12,12 +12,14 @@ public class MainActivity extends AppCompatActivity {
 
     private Button sendAgainButton;
     public static final String MESSAGE = "message";
+    public static final String TAG = "Julia";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        LOG.i(TAG, "onCreate method");
         sendAgainButton = (Button)
                 findViewById(R.id.btn_send_again);
         sendAgainButton.setOnClickListener(new View.OnClickListener() {
