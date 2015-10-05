@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LOG.i(TAG, "onCreate method");
+        Log.i(TAG, "onCreate method");
         sendAgainButton = (Button)
                 findViewById(R.id.btn_send_again);
         sendAgainButton.setOnClickListener(new View.OnClickListener() {
